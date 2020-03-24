@@ -8,7 +8,7 @@ import {MatTableModule} from '@angular/material/table';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { CompetenceDirective } from './competence.directive';
 import { CompetenceListComponent } from '../../components/competence/list/competence-list/competence-list.component';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';

@@ -9,7 +9,7 @@ import { ExperienceEditComponent } from '../../components/experience/experience-
 import { ExperienceDirective } from './experience.directive';
 import {CdkTableModule} from '@angular/cdk/table';
 import {MatTableModule} from '@angular/material/table';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
