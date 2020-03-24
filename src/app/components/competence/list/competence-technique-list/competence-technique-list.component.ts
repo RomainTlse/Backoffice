@@ -1,9 +1,9 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {CompetenceTechnique} from '../../../../interfaces/competence-technique';
+import {Component, OnInit} from '@angular/core';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import {CompetenceService} from '../../../../services/competence.service';
+import {CompetenceTechnique} from '../../../../interfaces/competence-technique';
 
 const ELEMENT_DATA: Array<CompetenceTechnique> = [
   {name: 'JS', image: 'javascript.svg', interet: 90, frameworks: [{name: 'Angular', image: 'angular.svg'}]},
@@ -15,8 +15,6 @@ const ELEMENT_DATA: Array<CompetenceTechnique> = [
   styleUrls: ['./competence-technique-list.component.scss']
 })
 export class CompetenceTechniqueListComponent implements OnInit {
-
-  @Output() output = new EventEmitter<string>();
 
   displayedColumns: string[] = ['name', 'image', 'interet', 'frameworks', 'action'];
   dataSource = ELEMENT_DATA;
@@ -30,8 +28,6 @@ export class CompetenceTechniqueListComponent implements OnInit {
   }
 
   loadComponent(component) {
-    console.log(component);
     this.competenceService.setComponentToLoad(component);
-    // this.output.emit(component);
   }
 }

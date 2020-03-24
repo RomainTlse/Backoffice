@@ -1,0 +1,50 @@
+<section *ngIf="messageService.messages.length" class="section--message">
+  <div *ngFor='let message of messageService.messages'>
+    <!-- message de sucsess -->
+    <div class="message--content message--content__success" *ngIf="message.type=='success'">
+      <fa-icon class="icon--message icon--message__success" [icon]="faCheck"></fa-icon>
+      <span class="title">Succès</span>
+      <fa-icon [icon]="faWindowClose" (click)="messageService.clear()"></fa-icon>
+      <br>
+      <div class="message--display">
+        {{message.message}}
+      </div>
+    </div>
+    <!-- message d'erreur -->
+    <div class="message--content message--content__error" *ngIf="message.type=='error'">
+      <fa-icon class="icon--message icon--message__error" [icon]="faTimesCircle"></fa-icon>
+      <span class="title">
+      {{message.title}}
+      </span>
+      <fa-icon [icon]="faWindowClose" (click)="messageService.clear()"></fa-icon>
+      <br>
+      <div class="message--display">
+        {{message.message}}
+      </div>
+    </div>
+    <!-- message d'attention -->
+    <div class="message--content message--content__warning" *ngIf="message.type=='warning'">
+      <fa-icon class="icon--message icon--message__warning" [icon]="faExclamationTriangle"></fa-icon>
+      <span class="title">
+        {{message.title}}
+      </span>
+      <fa-icon [icon]="faWindowClose" (click)="messageService.clear()"></fa-icon>
+      <br>
+      <div class="message--display">
+        {{message.message}}
+      </div>
+    </div>
+    <!-- message d'attention -->
+    <div class="message--content message--content__info" *ngIf="message.type=='information'">
+      <fa-icon class="icon--message icon--message__info" [icon]="faInfoCircle"></fa-icon>
+      <span class="title">
+        {{message.title}}
+      </span>
+      <fa-icon [icon]="faWindowClose" (click)="messageService.clear()"></fa-icon>
+      <br>
+      <div class="message--display">
+        {{message.message}}
+      </div>
+    </div>
+  </div>
+</section>

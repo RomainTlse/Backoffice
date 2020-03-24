@@ -1,0 +1,24 @@
+@import "src/variables";
+
+.section--login{
+  width: 100%;
+  height: 100vh;
+  background-color: $backgroundGrey;
+  display: flex;
+  -webkit-box-align: center;
+
+  .container--login{
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    padding: 15px;
+    background-color: $backgroundGrey2;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.9);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.9);
+
+    .form-field-full-width{
+      width: 100%;
+    }
+  }
+}

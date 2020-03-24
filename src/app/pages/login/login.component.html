@@ -1,0 +1,15 @@
+<section class="section--login">
+  <div class="container--login">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="form-field-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput required formControlName="username">
+      </mat-form-field>
+      <mat-form-field class="form-field-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput required formControlName="password">
+      </mat-form-field>
+      <button mat-button type="submit" [disabled]="!loginForm.valid">Connexion</button>
+    </form>
+  </div>
+</section>

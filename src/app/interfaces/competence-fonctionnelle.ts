@@ -1,3 +1,3 @@
 export interface CompetenceFonctionnelle {
-  competence: Array<string>;
+  competence: string;
 }

@@ -79,6 +79,5 @@ export class CompetenceComponent implements OnInit {
           this.loadComponent(value);
         });
     }
-
   }
 }

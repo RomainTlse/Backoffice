@@ -1,0 +1,22 @@
+@import "../../../../variables";
+
+h1{
+  color: $backgroundGrey3;
+}
+
+table{
+  margin: 5px;
+  width: calc(100% - 10px);
+
+  .mat-cell {
+    color: $backgroundGrey4;
+  }
+
+  .mat-header-cell{
+    color: white;
+  }
+}
+
+fa-icon{
+  color: $backgroundGrey4;
+}

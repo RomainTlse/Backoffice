@@ -20,7 +20,27 @@
         width: calc(50% - 20px);
         height: calc(50% - 20px);
         margin: 10px;
-        background-color: $backgroundGrey3;
+        text-align: center;
+      }
+      .competence{
+        background-image: url("src/assets/images/italy1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .experience{
+        background-image: url("src/assets/images/italy2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .formation{
+        background-image: url("src/assets/images/italy3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .interet{
+        background-image: url("src/assets/images/italy4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     }
   }

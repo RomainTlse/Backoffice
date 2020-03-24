@@ -1,0 +1,91 @@
+.section--message{
+  .message--content{
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    color: white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+
+    .icon--message{
+      font-size: 30px;
+      position: absolute;
+    }
+
+    .title{
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    fa-icon{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+    }
+
+    .message--display{
+      margin-top: 10px;
+    }
+  }
+
+
+  .message--content__success{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0b3b0b+0,0b610b+50,0b3b0b+100&0+0,1+50,1+100 */
+    background: -moz-linear-gradient(45deg,  rgba(11,59,11,0) 0%, rgba(11,97,11,1) 50%, rgba(11,59,11,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(11,59,11,0) 0%,rgba(11,97,11,1) 50%,rgba(11,59,11,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(11,59,11,0) 0%,rgba(11,97,11,1) 50%,rgba(11,59,11,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000b3b0b', endColorstr='#0b3b0b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    .icon--message{
+      top: -20px;
+      left: -10px;
+      color: #088A08;
+    }
+  }
+
+  .message--content__error{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#610b0b+0,8a0808+50,610b0b+100&0+0,1+50,1+100 */
+    background: -moz-linear-gradient(45deg,  rgba(97,11,11,0) 0%, rgba(138,8,8,1) 50%, rgba(97,11,11,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(97,11,11,0) 0%,rgba(138,8,8,1) 50%,rgba(97,11,11,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(97,11,11,0) 0%,rgba(138,8,8,1) 50%,rgba(97,11,11,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00610b0b', endColorstr='#610b0b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    .icon--message__error{
+      top: -17px;
+      left: -15px;
+      color: #B40404;
+    }
+  }
+
+  .message--content__warning{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8a2908+0,b45f04+50,8a2908+100&0+0,1+50,1+100 */
+    background: -moz-linear-gradient(45deg,  rgba(138,41,8,0) 0%, rgba(180,95,4,1) 50%, rgba(138,41,8,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(138,41,8,0) 0%,rgba(180,95,4,1) 50%,rgba(138,41,8,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(138,41,8,0) 0%,rgba(180,95,4,1) 50%,rgba(138,41,8,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008a2908', endColorstr='#8a2908',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    .icon--message__warning{
+      top: -17px;
+      left: -15px;
+      color: #DF7401;
+    }
+  }
+
+  .message--content__info{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0b3861+0,084b8a+50,0b3861+100&0+0,1+50,1+100 */
+    background: -moz-linear-gradient(45deg,  rgba(11,56,97,0) 0%, rgba(8,75,138,1) 50%, rgba(11,56,97,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(11,56,97,0) 0%,rgba(8,75,138,1) 50%,rgba(11,56,97,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(11,56,97,0) 0%,rgba(8,75,138,1) 50%,rgba(11,56,97,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000b3861', endColorstr='#0b3861',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    .icon--message__info{
+      top: -17px;
+      left: -15px;
+      color: #73C2FB;
+    }
+  }
+}

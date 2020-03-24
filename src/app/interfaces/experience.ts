@@ -7,6 +7,6 @@ export interface Experience {
   adresse: string;
   context: Array<string>;
   realisations: Array<string>;
-  techologies: Array<string>;
+  technologies: Array<string>;
   outils: Array<string>;
 }

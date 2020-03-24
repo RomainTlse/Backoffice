@@ -9,10 +9,16 @@ import { ExperienceModule } from './pages/experience/experience.module';
 import { FormationModule } from './pages/formation/formation.module';
 import { InteretModule } from './pages/interet/interet.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginModule } from './pages/login/login.module';
+import { MessagesComponent } from './shared/messages/messages.component';
+import {MessageService} from './services/message.service';
+import {HttpErrorHandlerService} from './services/http-error-handler.service';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,8 +29,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormationModule,
     InteretModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
+    LoginModule,
   ],
-  providers: [],
+  providers: [
+    MessageService,
+    HttpErrorHandlerService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

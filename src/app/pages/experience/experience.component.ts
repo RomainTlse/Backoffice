@@ -3,6 +3,7 @@ import {ExperienceDirective} from './experience.directive';
 import {ExperienceListComponent} from '../../components/experience/experience-list/experience-list.component';
 import {ExperienceEditComponent} from '../../components/experience/experience-edit/experience-edit.component';
 import {ExperienceDeleteComponent} from '../../components/experience/experience-delete/experience-delete.component';
+import {ExperienceService} from '../../services/experience.service';
 
 interface IComp {
   output: any;
@@ -17,7 +18,8 @@ export class ExperienceComponent implements OnInit {
 
   @ViewChild(ExperienceDirective, {static: true}) appExperienceContent: ExperienceDirective;
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+  constructor(private componentFactoryResolver: ComponentFactoryResolver,
+              private experienceService: ExperienceService) { }
 
   ngOnInit() {
     this.loadComponent('list');
@@ -49,6 +51,13 @@ export class ExperienceComponent implements OnInit {
       (componentRef.instance as IComp).output.subscribe(
         data => this.loadComponent(data)
       );
+    }
+    const load = this.experienceService.getComponentToLoad();
+    if (load) {
+      load.subscribe(
+        (value) => {
+          this.loadComponent(value);
+        });
     }
   }
 }
