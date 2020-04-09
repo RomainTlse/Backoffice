@@ -19,6 +19,6 @@ export class CompetenceService {
   }
 
   setComponentToLoad(value: string) {
-    this.componentToLoad.next(value);
+      this.componentToLoad.next(value);
   }
 }

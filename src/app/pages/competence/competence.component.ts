@@ -67,11 +67,7 @@ export class CompetenceComponent implements OnInit {
 
     const componentRef = viewContainerRef.createComponent(componentFactory);
 
-    if ((componentRef.instance as IComp).output) {
-      (componentRef.instance as IComp).output.subscribe(
-        data => this.loadComponent(data)
-      );
-    }
+
     const load = this.competenceService.getComponentToLoad();
     if (load) {
       load.subscribe(

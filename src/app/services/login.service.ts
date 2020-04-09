@@ -14,7 +14,7 @@ const httpOptions = {
 @Injectable()
 export class LoginService {
   loginUrl = 'http://localhost:3000/api/auth/login'; // URL to web api
-  handleError: HandleError;
+    handleError: HandleError;
 
   constructor(private http: HttpClient,
               public httpErrorHandler: HttpErrorHandlerService) {
